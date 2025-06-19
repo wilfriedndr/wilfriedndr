@@ -10,25 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
         <nav class="navbar">
-            <button id="dark-toggle" aria-label="Mode sombre">
-                <i class="fas fa-sun"></i>
-            </button>
+            <div class="navbar-left">
+                <button id="dark-toggle" class="navbar-button" aria-label="Mode sombre">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button id="lang-toggle" class="navbar-button" aria-label="Changer la langue">
+                    <img id="lang-flag" src="icons/gb.svg" alt="lang">
+                </button>
+            </div>
+
             <div class="logo">Wilfried N.</div>
+
             <ul class="nav-links" id="nav-links">
-                <!-- <li><a href="#hero">Accueil</a></li> -->
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#hobby">Passions</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="menu_about">À propos</a></li>
+                <li><a href="#skills" data-i18n="menu_skills">Compétences</a></li>
+                <li><a href="#projects" data-i18n="menu_projects">Projets</a></li>
+                <li><a href="#hobby" data-i18n="menu_hobbies">Passions</a></li>
+                <li><a href="#contact" data-i18n="menu_contact">Contact</a></li>
             </ul>
             <div class="burger" id="burger">
                 <div class="line1"></div>
@@ -40,95 +44,95 @@
 
     <!-- HERO -->
     <section id="hero" class="hidden-scroll">
-        <h1>Wilfried Niederhoffer</h1>
-        <p>Concepteur Développeur d’Applications</p>
-        <p>Développeur passionné par le fullstack et le DevOps.</p>
+        <h1 data-i18n="hero_name">Wilfried Niederhoffer</h1>
+        <p data-i18n="hero_title">Concepteur Développeur d’Applications</p>
+        <p data-i18n="hero_desc">Développeur passionné par le fullstack et le DevOps.</p>
     </section>
 
     <!-- À PROPOS -->
     <section id="about" class="hidden-scroll">
-        <h2>À propos</h2>
-        <p>Curieux, sociable et enthousiaste, j’aime apprendre, construire et relever des défis techniques.</p>
+        <h2 data-i18n="about_title">À propos</h2>
+        <p data-i18n="about_text">Curieux, sociable et enthousiaste, j’aime apprendre, construire et relever des défis
+            techniques.</p>
     </section>
 
     <!-- COMPÉTENCES -->
     <section id="skills" class="hidden-scroll">
-        <h2>Compétences</h2>
+        <h2 data-i18n="skills_title">Compétences</h2>
         <div class="card">
             <ul>
-                <li>Développement : Python, FastAPI, JavaScript, TypeScript, HTML/CSS, PHP, Laravel</li>
-                <li>Frontend : Angular, Flutter, BabylonJS, React Native</li>
-                <li>Backend & DevOps : Docker, Kubernetes, GitLab CI/CD, Helm, Bash, Linux, Firebase, MySQL, NoSQL</li>
-                <li>Outils : GitHub Actions, Jira, Office 365, Azure AD</li>
-                <li>Langues : Anglais (C1)</li>
+                <li data-i18n="skills_dev">Développement : Python, FastAPI, JavaScript, TypeScript, HTML/CSS, PHP,
+                    Laravel</li>
+                <li data-i18n="skills_front">Frontend : Angular, Flutter, BabylonJS, React Native</li>
+                <li data-i18n="skills_back">Backend & DevOps : Docker, Kubernetes, GitLab CI/CD, Helm, Bash, Linux,
+                    Firebase, MySQL, NoSQL</li>
+                <li data-i18n="skills_tools">Outils : GitHub Actions, Jira, Office 365, Azure AD</li>
+                <li data-i18n="skills_langs">Langues : Anglais (C1)</li>
             </ul>
         </div>
     </section>
 
     <!-- EXPÉRIENCES -->
     <section id="experience" class="hidden-scroll">
-        <h2>Expériences professionnelles</h2>
+        <h2 data-i18n="exp_title">Expériences professionnelles</h2>
         <div class="experience card">
-            <h3>Concepteur Intégrateur DevOps - Atos, Toulouse (09/2021 – 09/2023)</h3>
-            <p>Refonte des workflows CI/CD avec GitLab, Docker, Kubernetes. Création d'une app web de modélisation 3D
-                avec Angular, FastAPI et BabylonJS.</p>
+            <h3 data-i18n="exp_1_title">Concepteur Intégrateur DevOps - Atos, Toulouse (09/2021 – 09/2023)</h3>
+            <p data-i18n="exp_1_desc">Refonte des workflows CI/CD avec GitLab, Docker, Kubernetes. Création d'une app
+                web de modélisation 3D avec Angular, FastAPI et BabylonJS.</p>
         </div>
         <div class="experience card">
-            <h3>Développeur Informatique - ICC Finance, Colomiers (09/2020 – 09/2021)</h3>
-            <p>Développement d’une app interne pour Office 365, gestion des accès, génération de signatures. Stack :
-                PHP, Laravel, Angular.</p>
+            <h3 data-i18n="exp_2_title">Développeur Informatique - ICC Finance, Colomiers (09/2020 – 09/2021)</h3>
+            <p data-i18n="exp_2_desc">Développement d’une app interne pour Office 365, gestion des accès, génération de
+                signatures. Stack : PHP, Laravel, Angular.</p>
         </div>
         <div class="experience card">
-            <h3>Stage Réseau - DGAC, Blagnac (05/2018 – 06/2018)</h3>
-            <p>Étude de sécurité réseau avec Pi-Hole sur Raspberry Pi.</p>
+            <h3 data-i18n="exp_3_title">Stage Réseau - DGAC, Blagnac (05/2018 – 06/2018)</h3>
+            <p data-i18n="exp_3_desc">Étude de sécurité réseau avec Pi-Hole sur Raspberry Pi.</p>
         </div>
     </section>
 
     <!-- PROJETS -->
     <section id="projects" class="hidden-scroll">
-        <h2>Projets personnels</h2>
+        <h2 data-i18n="projects_title">Projets personnels</h2>
         <div class="project card">
-            <h3>EnvieDici (03/2025 – présent)</h3>
-            <p>Site vitrine, boutique en ligne et backoffice. Stack : Angular, Django, Docker, Raspberry PI, GitHub
-                Actions.</p>
+            <h3 data-i18n="project_1_title">EnvieDici (03/2025 – présent)</h3>
+            <p data-i18n="project_1_desc">Site vitrine, boutique en ligne et backoffice. Stack : Angular, Django,
+                Docker, Raspberry PI, GitHub Actions.</p>
         </div>
         <div class="project card">
-            <h3>Appli musicale (09/2024 – 12/2024)</h3>
-            <p>Appli mobile Flutter avec intégration Spotify, Deezer, Apple Music.</p>
+            <h3 data-i18n="project_2_title">Appli musicale (09/2024 – 12/2024)</h3>
+            <p data-i18n="project_2_desc">Appli mobile Flutter avec intégration Spotify, Deezer, Apple Music.</p>
         </div>
     </section>
 
     <!-- FORMATIONS -->
     <section id="education" class="hidden-scroll">
-        <h2>Formations</h2>
+        <h2 data-i18n="education_title">Formations</h2>
         <div class="card">
             <ul>
-                <li>Master EISI, EPSI Toulouse (2021–2023)</li>
-                <li>Titre Pro DevOps, EPSI Toulouse (2020–2021)</li>
-                <li>Formation Java EE, DAWAN Toulouse (2019)</li>
-                <li>BTS SN IR, Lycée Saint-Pierre Tarbes (2017–2019)</li>
-                <li>Bac STI2D SIN, Pradeau-la-Sède Tarbes (2014–2017)</li>
+                <li data-i18n="edu_1">Master EISI, EPSI Toulouse (2021–2023)</li>
+                <li data-i18n="edu_2">Titre Pro DevOps, EPSI Toulouse (2020–2021)</li>
+                <li data-i18n="edu_3">Formation Java EE, DAWAN Toulouse (2019)</li>
+                <li data-i18n="edu_4">BTS SN IR, Lycée Saint-Pierre Tarbes (2017–2019)</li>
+                <li data-i18n="edu_5">Bac STI2D SIN, Pradeau-la-Sède Tarbes (2014–2017)</li>
             </ul>
         </div>
     </section>
 
     <!-- PASSIONS -->
     <section id="hobby" class="hidden-scroll">
-        <h2>Passions</h2>
-        <p class="card">Lecture, musique, jeux vidéo, cuisine, sport, voyages linguistiques et culturels (Brésil,
-            Norvège, Grèce,
-            Malte, Irlande, Espagne).</p>
+        <h2 data-i18n="hobby_title">Passions</h2>
+        <p class="card" data-i18n="hobby_desc">Lecture, musique, jeux vidéo, cuisine, sport, voyages linguistiques et
+            culturels (Brésil, Norvège, Grèce, Malte, Irlande, Espagne).</p>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="hidden-scroll">
-
-        <h2>Contact</h2>
+        <h2 data-i18n="contact_title">Contact</h2>
         <div class="card">
             <p>Email : <a href="mailto:wilfried.ndr@gmail.com">wilfried.ndr@gmail.com</a></p>
             <p>LinkedIn : <a href="https://www.linkedin.com/in/wilfriedndr/"
-                    target="_blank">linkedin.com/in/wilfriedndr</a>
-            </p>
+                    target="_blank">linkedin.com/in/wilfriedndr</a></p>
             <p>GitHub : <a href="https://github.com/wilfriedndr" target="_blank">github.com/wilfriedndr</a></p>
         </div>
     </section>
@@ -136,11 +140,13 @@
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Wilfried Niederhoffer. Tous droits réservés.</p>
-        <p>Site réalisé avec passion.</p>
+        <p data-i18n="footer_note">Site réalisé avec passion.</p>
     </footer>
+
     <button id="back-to-top" title="Retour en haut" aria-label="Retour en haut">
         <i class="fas fa-arrow-up"></i>
     </button>
+
     <script src="script.js"></script>
 </body>
 
