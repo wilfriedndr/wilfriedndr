@@ -20,11 +20,13 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: var(--background);
+  background-color: rgba(255, 255, 255, 0.85); /* translucide clair */
+  backdrop-filter: blur(5px);
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
+
 
 
 /* Navbar */
@@ -39,6 +41,12 @@ header {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
+.logo {
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
 
 /* Navigation links */
 .nav-links {
@@ -218,7 +226,7 @@ body.dark a {
 }
 
 body.dark .nav-links li a {
-  color: #eee;
+  color: var(--muted);
 }
 
 body.dark .nav-links li a:hover {
@@ -232,4 +240,8 @@ body.dark .burger div {
 body.dark header {
   background-color: rgba(30, 30, 30, 0.85);
   backdrop-filter: blur(5px);
+}
+
+body.dark .logo {
+  color: var(--muted);
 }

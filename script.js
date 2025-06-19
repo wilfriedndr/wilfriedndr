@@ -1,6 +1,7 @@
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('nav-links');
 const darkToggle = document.getElementById('dark-toggle');
+const icon = darkToggle.querySelector('i');
 
 // Menu burger avec animation
 burger.addEventListener('click', () => {
@@ -22,13 +23,14 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden-scroll');
 hiddenElements.forEach(el => observer.observe(el));
 
-// Dark mode avec localStorage
+// Dark mode + Font Awesome icon
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
+  icon.classList.replace('fa-sun', 'fa-moon');
 }
 
 darkToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  localStorage.setItem('theme',
-    document.body.classList.contains('dark') ? 'dark' : 'light');
+  const isDark = document.body.classList.toggle('dark');
+  icon.classList.replace(isDark ? 'fa-sun' : 'fa-moon', isDark ? 'fa-moon' : 'fa-sun');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
