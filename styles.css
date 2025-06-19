@@ -1,6 +1,20 @@
+:root {
+  --background: #f9f9f9;
+  --text: #222;
+  --accent: #0077ff;
+  --muted: #666;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
 }
 
 header {
@@ -78,4 +92,68 @@ header {
   .burger {
     display: flex;
   }
+}
+/* Animation de fade-in / slide-up */
+.hidden-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#hero {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: heroFadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+h2 {
+  margin-top: 3rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+p, li {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #005ccc;
 }
