@@ -20,10 +20,12 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: #fff;
+  background-color: var(--background);
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
 }
+
 
 /* Navbar */
 .navbar {
@@ -69,6 +71,8 @@ header {
   background-color: #333;
   transition: all 0.3s ease;
 }
+
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -156,4 +160,76 @@ a {
 
 a:hover {
   color: #005ccc;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation burger en X */
+.burger.open .line1 {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.burger.open .line2 {
+  opacity: 0;
+}
+
+.burger.open .line3 {
+  transform: rotate(-45deg) translateY(-7px);
+}
+
+/* Bouton dark mode */
+#dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Dark mode */
+body.dark {
+  --background: #111;
+  --text: #eee;
+  --muted: #aaa;
+  --accent: #4ea1f3;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark a {
+  color: var(--accent);
+}
+
+body.dark .nav-links li a {
+  color: #eee;
+}
+
+body.dark .nav-links li a:hover {
+  color: var(--accent);
+}
+
+body.dark .burger div {
+  background-color: #eee;
+}
+
+body.dark header {
+  background-color: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(5px);
 }

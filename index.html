@@ -17,12 +17,15 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar">
+            <button id="dark-toggle" aria-label="Activer/Désactiver le mode sombre">🌓</button>
+
             <div class="logo">Wilfried N.</div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">Accueil</a></li>
+                <!-- <li><a href="#hero">Accueil</a></li> -->
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#hobby">Passions</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger" id="burger">
@@ -61,15 +64,15 @@
     <!-- EXPÉRIENCES -->
     <section id="experience" class="hidden-scroll">
         <h2>Expériences professionnelles</h2>
-        <div class="experience">
+        <div class="experience card">
             <h3>Concepteur Intégrateur DevOps - Atos, Toulouse (09/2021 – 09/2023)</h3>
             <p>Refonte des workflows CI/CD avec GitLab, Docker, Kubernetes. Création d'une app web de modélisation 3D avec Angular, FastAPI et BabylonJS.</p>
         </div>
-        <div class="experience">
+        <div class="experience card">
             <h3>Développeur Informatique - ICC Finance, Colomiers (09/2020 – 09/2021)</h3>
             <p>Développement d’une app interne pour Office 365, gestion des accès, génération de signatures. Stack : PHP, Laravel, Angular.</p>
         </div>
-        <div class="experience">
+        <div class="experience card">
             <h3>Stage Réseau - DGAC, Blagnac (05/2018 – 06/2018)</h3>
             <p>Étude de sécurité réseau avec Pi-Hole sur Raspberry Pi.</p>
         </div>
@@ -78,11 +81,11 @@
     <!-- PROJETS -->
     <section id="projects" class="hidden-scroll">
         <h2>Projets personnels</h2>
-        <div class="project">
+        <div class="project card">
             <h3>EnvieDici (03/2025 – présent)</h3>
             <p>Site vitrine, boutique en ligne et backoffice. Stack : Angular, Django, Docker, Raspberry PI, GitHub Actions.</p>
         </div>
-        <div class="project">
+        <div class="project card">
             <h3>Appli musicale (09/2024 – 12/2024)</h3>
             <p>Appli mobile Flutter avec intégration Spotify, Deezer, Apple Music.</p>
         </div>
@@ -101,7 +104,7 @@
     </section>
 
     <!-- PASSIONS -->
-    <section id="hobbies" class="hidden-scroll">
+    <section id="hobby" class="hidden-scroll">
         <h2>Passions</h2>
         <p>Lecture, musique, jeux vidéo, cuisine, sport, voyages linguistiques et culturels (Brésil, Norvège, Grèce, Malte, Irlande, Espagne).</p>
     </section>
