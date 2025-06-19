@@ -269,3 +269,36 @@ body.dark .logo {
 body.dark #dark-toggle i {
   transform: rotate(360deg);
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1001;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back-to-top:hover {
+  background-color: #005ccc;
+  transform: scale(1.1);
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
