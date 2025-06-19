@@ -15,7 +15,9 @@ body {
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 
 header {
   position: sticky;
@@ -24,7 +26,7 @@ header {
   backdrop-filter: blur(5px);
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background-color 0.4s ease, backdrop-filter 0.3s ease;
 }
 
 
@@ -163,7 +165,7 @@ footer {
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -171,13 +173,17 @@ a:hover {
 }
 
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.25); /* semi-transparent */
   border-radius: 12px;
   padding: 1.5rem;
   margin: 1rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* flou en fond */
+  -webkit-backdrop-filter: blur(10px); /* pour Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease, color 0.4s ease;
 }
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -225,9 +231,11 @@ body.dark {
 }
 
 body.dark .card {
-  background-color: #1e1e1e;
+  background: rgba(30, 30, 30, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
+
 
 body.dark a {
   color: var(--accent);
