@@ -44,10 +44,17 @@
 
     <!-- HERO -->
     <section id="hero" class="hidden-scroll">
-        <h1 data-i18n="hero_name">Wilfried Niederhoffer</h1>
-        <p data-i18n="hero_title">Concepteur Développeur d’Applications</p>
-        <p data-i18n="hero_desc">Développeur passionné par le fullstack et le DevOps.</p>
+        <div class="hero-container">
+            <img src="images/profile.png" alt="Photo de Wilfried" class="profile-pic" />
+            <div class="hero-text">
+                <h1 data-i18n="hero_name">Wilfried NIEDERHOFFER</h1>
+                <p data-i18n="hero_title">Concepteur Développeur d’Applications</p>
+                <p data-i18n="hero_desc">Développeur passionné par le fullstack et le DevOps.</p>
+            </div>
+        </div>
     </section>
+
+
 
     <!-- À PROPOS -->
     <section id="about" class="hidden-scroll">
@@ -77,8 +84,56 @@
         <h2 data-i18n="exp_title">Expériences professionnelles</h2>
         <div class="experience card">
             <h3 data-i18n="exp_1_title">Concepteur Intégrateur DevOps - Atos, Toulouse (09/2021 – 09/2023)</h3>
-            <p data-i18n="exp_1_desc">Refonte des workflows CI/CD avec GitLab, Docker, Kubernetes. Création d'une app
-                web de modélisation 3D avec Angular, FastAPI et BabylonJS.</p>
+            <p>Refonte CI/CD, DevOps & développement fullstack dans l’aéronautique.</p>
+            <button class="open-modal-btn" data-modal="modal-atos">Détails</button>
+        </div>
+
+        <div class="modal" id="modal-atos">
+            <div class="modal-content">
+                <span class="close-modal" data-modal="modal-atos">&times;</span>
+                <h3 class="fade-in-scroll">Concepteur Intégrateur DevOps – Atos, Toulouse</h3>
+                <p class="fade-in-scroll"><strong>Période :</strong> Septembre 2021 à Septembre 2023</p>
+                <hr class="fade-in-scroll">
+                <h4 class="fade-in-scroll">Projet 1 – Optimisation des workflows CI/CD</h4>
+                <p class="fade-in-scroll"><strong>Contexte :</strong> L’équipe utilisait Tortoise SVN et faisait appel à
+                    l’IT pour chaque déploiement, entraînant des lenteurs et une dépendance forte.</p>
+                <p class="fade-in-scroll"><strong>Objectif :</strong> Moderniser les workflows de développement en
+                    introduisant une CI/CD automatisée.</p>
+                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Analyse du processus existant et proposition d’une architecture CI/CD avec GitLab</li>
+                    <li>Création d’un pipeline automatisé (tests, builds Maven, Docker, déploiement Kubernetes)</li>
+                    <li>Suppression de la dépendance aux équipes IT pour les déploiements</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Résultats :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Cycle de mise en production accéléré de plus de 60%</li>
+                    <li>Adoption de GitLab CI/CD par toute l’équipe</li>
+                </ul>
+
+                <hr class="fade-in-scroll">
+                <h4 class="fade-in-scroll">Projet 2 – Développement d’une application web de modélisation 3D</h4>
+                <p class="fade-in-scroll"><strong>Contexte :</strong> Conception d’une application pour visualiser en 3D
+                    le fuselage d’un avion et détecter des défauts (ex. rivets endommagés).</p>
+                <p class="fade-in-scroll"><strong>Objectif :</strong> Développer une application web fullstack
+                    permettant la modélisation 3D, avec vues 2D/3D et tableaux analytiques.</p>
+                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Développement du frontend Angular avec Babylon.js pour la 3D</li>
+                    <li>Mise en place d’une API FastAPI pour la gestion des modèles 3D (import/export)</li>
+                    <li>Interfaçage avec MongoDB pour la persistance des données</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Résultats :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Application 3D interactive utilisée dans une maquette client</li>
+                    <li>Support natif de fichiers AutoCAD, exportables pour analyse externe</li>
+                </ul>
+
+                <hr class="fade-in-scroll">
+                <p class="fade-in-scroll"><strong>Environnement technique :</strong> GitLab CI/CD, GitLab Runner,
+                    Docker, Kubernetes, FastAPI (Python), Angular, BabylonJS, MongoDB, PostgreSQL, Maven, Agile
+                    Scrum/Kanban</p>
+            </div>
         </div>
         <div class="experience card">
             <h3 data-i18n="exp_2_title">Développeur Informatique - ICC Finance, Colomiers (09/2020 – 09/2021)</h3>

@@ -6,13 +6,13 @@ const backToTopButton = document.getElementById('back-to-top');
 const langToggle = document.getElementById('lang-toggle');
 const langFlag = document.getElementById('lang-flag');
 
-// Menu burger avec animation
+// Menu burger
 burger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   burger.classList.toggle('open');
 });
 
-// Observer pour les animations au scroll
+// Animation au scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.hidden-scroll').forEach(el => observer.observe(el));
 
-// Dark mode + Font Awesome icon
+// Dark mode
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
   icon.classList.replace('fa-sun', 'fa-moon');
@@ -35,7 +35,7 @@ darkToggle.addEventListener('click', () => {
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
-// Scroll vers le haut
+// Bouton retour haut
 window.addEventListener('scroll', () => {
   backToTopButton.classList.toggle('show', window.scrollY > 300);
 });
@@ -44,7 +44,7 @@ backToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Dictionnaires de traduction
+// Traduction
 const translations = {
   fr: {
     menu_about: "À propos",
@@ -128,7 +128,7 @@ const translations = {
   }
 };
 
-// Gestion du changement de langue
+// Langue initiale
 let currentLang = localStorage.getItem('lang') || 'fr';
 updateLanguage(currentLang);
 
@@ -145,7 +145,6 @@ function updateLanguage(lang) {
     }
   });
 
-  // Animation du drapeau
   langFlag.classList.add('rotate');
   setTimeout(() => {
     langFlag.src = lang === 'fr' ? 'icons/gb.svg' : 'icons/fr.svg';
@@ -156,3 +155,77 @@ function updateLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
 }
+
+// Gestion des modales
+document.querySelectorAll('.open-modal-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const modalId = button.getAttribute('data-modal');
+    document.getElementById(modalId).style.display = 'flex';
+
+    // Floutage des .card d'expérience
+    document.querySelectorAll('.experience.card').forEach(card => {
+      card.classList.add('blur-on-modal');
+    });
+  });
+});
+
+document.querySelectorAll('.close-modal').forEach(span => {
+  span.addEventListener('click', () => {
+    const modalId = span.getAttribute('data-modal');
+    document.getElementById(modalId).style.display = 'none';
+
+    document.querySelectorAll('.experience.card').forEach(card => {
+      card.classList.remove('blur-on-modal');
+    });
+  });
+});
+
+document.body.addEventListener('click', function (e) {
+  const isModalOpenBtn = e.target.closest('.open-modal-btn');
+  const isInsideModalContent = e.target.closest('.modal-content');
+  const openModal = document.querySelector('.modal[style*="display: flex"]');
+
+  if (!openModal) return;
+
+  // Ne pas fermer si on clique dans la modale ou sur un bouton d'ouverture
+  if (!isModalOpenBtn && !isInsideModalContent) {
+    openModal.style.display = 'none';
+
+    document.querySelectorAll('.experience.card').forEach(card => {
+      card.classList.remove('blur-on-modal');
+    });
+  }
+});
+
+// Fade-in au scroll dans les modales
+const modalContentElements = document.querySelectorAll('.modal-content p, .modal-content ul, .modal-content li, .modal-content h3, .modal-content h4, .modal-content hr');
+
+// Ajouter automatiquement la classe fade-in-scroll à ces éléments
+modalContentElements.forEach(el => {
+  el.classList.add('fade-in-scroll');
+});
+
+// Observer chaque élément nouvellement marqué
+const fadeInObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible'); // permet de rejouer l'animation
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '100px 0px -60px 0px'
+});
+
+// Observer les éléments
+modalContentElements.forEach(el => fadeInObserver.observe(el));
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    burger.classList.remove('open');
+  });
+});
+
