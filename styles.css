@@ -65,6 +65,22 @@ header {
   transition: color 0.3s ease;
 }
 
+.logo a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #0077ff;
+}
+
+body.dark .logo a {
+  color: var(--muted);
+}
+
+body.dark .logo a:hover {
+  color: var(--accent);
+}
 
 /* Navigation links */
 .nav-links {
@@ -320,10 +336,6 @@ body.dark .burger div {
 body.dark header {
   background-color: rgba(30, 30, 30, 0.85);
   backdrop-filter: blur(5px);
-}
-
-body.dark .logo {
-  color: var(--muted);
 }
 
 #dark-toggle i {
