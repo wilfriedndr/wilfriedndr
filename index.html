@@ -84,127 +84,149 @@
         <h2 data-i18n="exp_title">Expériences professionnelles</h2>
         <div class="experience card">
             <h3 data-i18n="exp_1_title">Concepteur Intégrateur DevOps - Atos, Toulouse (09/2021 – 09/2023)</h3>
-            <p>Refonte CI/CD, DevOps & développement fullstack dans l’aéronautique.</p>
-            <button class="open-modal-btn" data-modal="modal-atos">Détails</button>
+            <p data-i18n="exp_1_desc">Refonte CI/CD, DevOps & développement fullstack dans l’aéronautique.</p>
+            <button class="open-modal-btn" data-modal="modal-atos" data-i18n="details_btn">Détails</button>
         </div>
 
         <div class="modal" id="modal-atos">
             <div class="modal-content">
                 <span class="close-modal" data-modal="modal-atos">&times;</span>
-                <h3 class="fade-in-scroll">Concepteur Intégrateur DevOps – Atos, Toulouse</h3>
-                <p class="fade-in-scroll"><strong>Période :</strong> Septembre 2021 à Septembre 2023</p>
+                <h3 class="fade-in-scroll" data-i18n="exp_1_modal_title">Concepteur Intégrateur DevOps – Atos, Toulouse
+                </h3>
+                <p class="fade-in-scroll" data-i18n="exp_1_period"><strong>Période :</strong> Septembre 2021 à Septembre
+                    2023</p>
                 <hr class="fade-in-scroll">
-                <h4 class="fade-in-scroll">Projet 1 – Optimisation des workflows CI/CD</h4>
-                <p class="fade-in-scroll"><strong>Contexte :</strong> L’équipe utilisait Tortoise SVN et faisait appel à
-                    l'équipe IT du client pour chaque déploiement, entraînant des lenteurs et une dépendance forte.</p>
-                <p class="fade-in-scroll"><strong>Objectif :</strong> Moderniser les workflows de développement en
-                    introduisant une CI/CD automatisée.</p>
-                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <h4 class="fade-in-scroll" data-i18n="exp_1_project1_title">Projet 1 – Optimisation des workflows CI/CD
+                </h4>
+                <p class="fade-in-scroll" data-i18n="exp_1_project1_context"><strong>Contexte :</strong> L’équipe
+                    utilisait Tortoise SVN et faisait appel à l'équipe IT du client pour chaque déploiement, entraînant
+                    des lenteurs et une dépendance forte.</p>
+                <p class="fade-in-scroll" data-i18n="exp_1_project1_goal"><strong>Objectif :</strong> Moderniser les
+                    workflows de développement en introduisant une CI/CD automatisée.</p>
+                <p class="fade-in-scroll"><strong data-i18n="missions">Missions :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Analyse du processus existant et proposition d’une architecture CI/CD avec GitLab</li>
-                    <li>Création d’un pipeline automatisé (tests, builds Maven, Docker, déploiement Kubernetes)</li>
-                    <li>Suppression de la dépendance aux équipes IT pour les déploiements</li>
+                    <li data-i18n="exp_1_project1_mission1">Analyse du processus existant et proposition d’une
+                        architecture CI/CD avec GitLab</li>
+                    <li data-i18n="exp_1_project1_mission2">Création d’un pipeline automatisé (tests, builds Maven,
+                        Docker, déploiement Kubernetes)</li>
+                    <li data-i18n="exp_1_project1_mission3">Suppression de la dépendance aux équipes IT pour les
+                        déploiements</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Résultats :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="results">Résultats :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Cycle de mise en production accéléré</li>
-                    <li>Optimisation du workflow de développement</li>
-                    <li>Amélioration significative de l’efficacité des développeurs en réduisant le temps de mise en
-                        production et en supprimant la dépendance aux équipes IT du clients pour les déploiements.</li>
-                    <li>Conception et développement d’un pipeline d’intégration continue (CI/CD) automatisant :</li>
+                    <li data-i18n="exp_1_project1_result1">Cycle de mise en production accéléré</li>
+                    <li data-i18n="exp_1_project1_result2">Optimisation du workflow de développement</li>
+                    <li data-i18n="exp_1_project1_result3">Amélioration significative de l’efficacité des développeurs
+                        en réduisant le temps de mise en production et en supprimant la dépendance aux équipes IT du
+                        clients pour les déploiements.</li>
+                    <li data-i18n="exp_1_project1_result4">Conception et développement d’un pipeline d’intégration
+                        continue (CI/CD) automatisant :</li>
                 </ul>
                 <ul class="fade-in-scroll sub-list">
-                    <li>L’exécution automatisée des tests</li>
-                    <li>Le build des applications via Maven</li>
-                    <li>La génération d’images Docker pour les différents services</li>
-                    <li>Le déploiement orchestré sur Kubernetes</li>
+                    <li data-i18n="exp_1_project1_sub1">L’exécution automatisée des tests</li>
+                    <li data-i18n="exp_1_project1_sub2">Le build des applications via Maven</li>
+                    <li data-i18n="exp_1_project1_sub3">La génération d’images Docker pour les différents services</li>
+                    <li data-i18n="exp_1_project1_sub4">Le déploiement orchestré sur Kubernetes</li>
                 </ul>
                 <hr class="fade-in-scroll">
-                <h4 class="fade-in-scroll">Projet 2 – Développement d’une application web de modélisation 3D</h4>
-                <p class="fade-in-scroll"><strong>Contexte :</strong> Conception d’une application pour visualiser en 3D
-                    le fuselage d’un avion et détecter des défauts (ex. rivets endommagés).</p>
-                <p class="fade-in-scroll"><strong>Objectif :</strong> Développer une application web fullstack
-                    permettant la modélisation 3D, avec vues 2D/3D et tableaux analytiques.</p>
-                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <h4 class="fade-in-scroll" data-i18n="exp_1_project2_title">Projet 2 – Développement d’une application
+                    web de modélisation 3D</h4>
+                <p class="fade-in-scroll" data-i18n="exp_1_project2_context"><strong>Contexte :</strong> Conception
+                    d’une application pour visualiser en 3D le fuselage d’un avion et détecter des défauts (ex. rivets
+                    endommagés).</p>
+                <p class="fade-in-scroll" data-i18n="exp_1_project2_goal"><strong>Objectif :</strong> Développer une
+                    application web fullstack permettant la modélisation 3D, avec vues 2D/3D et tableaux analytiques.
+                </p>
+                <p class="fade-in-scroll"><strong data-i18n="missions">Missions :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement du frontend avec Angular et Babylon.js pour la modélisation 3D</li>
-                    <li>Mise en place d’une API FastAPI pour la gestion des modèles 3D (import/export)</li>
-                    <li>Interfaçage avec MongoDB pour la persistance des données</li>
+                    <li data-i18n="exp_1_project2_mission1">Développement du frontend avec Angular et Babylon.js pour la
+                        modélisation 3D</li>
+                    <li data-i18n="exp_1_project2_mission2">Mise en place d’une API FastAPI pour la gestion des modèles
+                        3D (import/export)</li>
+                    <li data-i18n="exp_1_project2_mission3">Interfaçage avec MongoDB pour la persistance des données
+                    </li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Résultats :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="results">Résultats :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement d’une application de modélisation 3D</li>
-                    <li>Conception et implémentation d’une interface web interactive permettant la visualisation et
-                        l’analyse du fuselage d’un avion.</li>
-                    <li>Mise en place d’une API backend en Python (FastAPI) permettant de gérer les modèles 3D et
-                        d’interagir avec les données stockées en MongoDB.</li>
-                    <li>Développement de différentes représentations des données (3D, 2D, tabulaire).</li>
-                    <li>Support natif de fichiers AutoCAD, exportables pour analyse externe</li>
+                    <li data-i18n="exp_1_project2_result1">Développement d’une application de modélisation 3D</li>
+                    <li data-i18n="exp_1_project2_result2">Conception et implémentation d’une interface web interactive
+                        permettant la visualisation et l’analyse du fuselage d’un avion.</li>
+                    <li data-i18n="exp_1_project2_result3">Mise en place d’une API backend en Python (FastAPI)
+                        permettant de gérer les modèles 3D et d’interagir avec les données stockées en MongoDB.</li>
+                    <li data-i18n="exp_1_project2_result4">Développement de différentes représentations des données (3D,
+                        2D, tabulaire).</li>
+                    <li data-i18n="exp_1_project2_result5">Support natif de fichiers AutoCAD, exportables pour analyse
+                        externe</li>
                 </ul>
-
                 <hr class="fade-in-scroll">
-                <p class="fade-in-scroll"><strong>Environnement technique :</strong> GitLab CI/CD, GitLab Runner,
+                <p class="fade-in-scroll" data-i18n="exp_1_tech">Environnement technique : GitLab CI/CD, GitLab Runner,
                     Docker, Kubernetes, FastAPI (Python), Angular, BabylonJS, MongoDB, PostgreSQL, Maven, Agile
                     Scrum/Kanban</p>
             </div>
         </div>
+
         <div class="experience card">
             <h3 data-i18n="exp_2_title">Développeur Informatique - ICC Finance, Colomiers (09/2020 – 09/2021)</h3>
             <p data-i18n="exp_2_desc">Développement d’une app interne pour Office 365, gestion des accès, génération de
                 signatures. Stack : PHP, Laravel, Angular.</p>
-            <button class="open-modal-btn" data-modal="modal-icc">Détails</button>
+            <button class="open-modal-btn" data-modal="modal-icc" data-i18n="details_btn">Détails</button>
         </div>
-
 
         <div class="modal" id="modal-icc">
             <div class="modal-content">
                 <span class="close-modal" data-modal="modal-icc">&times;</span>
-                <h3 class="fade-in-scroll">Développeur Informatique – ICC Finance, Colomiers</h3>
-                <p class="fade-in-scroll"><strong>Période :</strong> Septembre 2020 à Septembre 2021</p>
+                <h3 class="fade-in-scroll" data-i18n="exp_2_modal_title">Développeur Informatique – ICC Finance,
+                    Colomiers</h3>
+                <p class="fade-in-scroll" data-i18n="exp_2_period"><strong>Période :</strong> Septembre 2020 à Septembre
+                    2021</p>
                 <hr class="fade-in-scroll">
-                <p class="fade-in-scroll"><strong>Contexte :</strong> Besoin d’optimiser les outils internes et la
-                    présence web de l’entreprise tout en assurant la gestion quotidienne de l’infrastructure IT.</p>
-                <p class="fade-in-scroll"><strong>Objectif :</strong> Automatiser la gestion des comptes, améliorer les
-                    outils internes et maintenir les sites web.</p>
-                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <p class="fade-in-scroll" data-i18n="exp_2_context"><strong>Contexte :</strong> Besoin d’optimiser les
+                    outils internes et la présence web de l’entreprise tout en assurant la gestion quotidienne de
+                    l’infrastructure IT.</p>
+                <p class="fade-in-scroll" data-i18n="exp_2_goal"><strong>Objectif :</strong> Automatiser la gestion des
+                    comptes, améliorer les outils internes et maintenir les sites web.</p>
+                <p class="fade-in-scroll"><strong data-i18n="missions">Missions :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement d’une application interne pour automatiser la création de comptes Office 365</li>
-                    <li>Génération automatique des signatures mails et gestion des droits d’accès</li>
-                    <li>Développement et maintenance des sites de la société</li>
-                    <li>Maintenance IT quotidienne, support technique et pilotage du CRM</li>
+                    <li data-i18n="exp_2_mission1">Développement d’une application interne pour automatiser la création
+                        de comptes Office 365</li>
+                    <li data-i18n="exp_2_mission2">Génération automatique des signatures mails et gestion des droits
+                        d’accès</li>
+                    <li data-i18n="exp_2_mission3">Développement et maintenance des sites de la société</li>
+                    <li data-i18n="exp_2_mission4">Maintenance IT quotidienne, support technique et pilotage du CRM</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Angular, PHP, Laravel, MySQL,
-                    HTML/CSS, JavaScript, TypeScript, WordPress, Office 365, Azure Active
-                    Directory</p>
+                <p class="fade-in-scroll" data-i18n="exp_2_tech"><strong>Environnement technique :</strong> Angular,
+                    PHP, Laravel, MySQL, HTML/CSS, JavaScript, TypeScript, WordPress, Office 365, Azure Active Directory
+                </p>
             </div>
         </div>
 
         <div class="experience card">
             <h3 data-i18n="exp_3_title">Stage Réseau - DGAC, Blagnac (05/2018 – 06/2018)</h3>
             <p data-i18n="exp_3_desc">Étude de sécurité réseau avec Pi-Hole sur Raspberry Pi.</p>
-            <button class="open-modal-btn" data-modal="modal-dgac">Détails</button>
+            <button class="open-modal-btn" data-modal="modal-dgac" data-i18n="details_btn">Détails</button>
         </div>
 
         <div class="modal" id="modal-dgac">
             <div class="modal-content">
                 <span class="close-modal" data-modal="modal-dgac">&times;</span>
-                <h3 class="fade-in-scroll">Stage Réseau – DGAC, Blagnac</h3>
-                <p class="fade-in-scroll"><strong>Période :</strong> Mai 2018 à Juin 2018</p>
+                <h3 class="fade-in-scroll" data-i18n="exp_3_modal_title">Stage Réseau – DGAC, Blagnac</h3>
+                <p class="fade-in-scroll" data-i18n="exp_3_period"><strong>Période :</strong> Mai 2018 à Juin 2018</p>
                 <hr class="fade-in-scroll">
-                <p class="fade-in-scroll"><strong>Contexte :</strong> L’administration souhaitait évaluer des solutions
-                    open-source pour renforcer la sécurité réseau à moindre coût.</p>
-                <p class="fade-in-scroll"><strong>Objectif :</strong> Étudier l’implémentation de solutions de filtrage
-                    DNS et bloquer les contenus indésirables via Pi-Hole.</p>
-                <p class="fade-in-scroll"><strong>Missions :</strong></p>
+                <p class="fade-in-scroll" data-i18n="exp_3_context"><strong>Contexte :</strong> L’administration
+                    souhaitait évaluer des solutions open-source pour renforcer la sécurité réseau à moindre coût.</p>
+                <p class="fade-in-scroll" data-i18n="exp_3_goal"><strong>Objectif :</strong> Étudier l’implémentation de
+                    solutions de filtrage DNS et bloquer les contenus indésirables via Pi-Hole.</p>
+                <p class="fade-in-scroll"><strong data-i18n="missions">Missions :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Installation et configuration de Pi-Hole sur un Raspberry Pi</li>
-                    <li>Tests de blocage DNS, blacklistage et whitelistage de domaines</li>
-                    <li>Analyse de sécurité réseau à l’aide de Kali Linux</li>
+                    <li data-i18n="exp_3_mission1">Installation et configuration de Pi-Hole sur un Raspberry Pi</li>
+                    <li data-i18n="exp_3_mission2">Tests de blocage DNS, blacklistage et whitelistage de domaines</li>
+                    <li data-i18n="exp_3_mission3">Analyse de sécurité réseau à l’aide de Kali Linux</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Raspberry Pi, Pi-Hole, Linux, Bash,
-                    Python, Kali-Linux</p>
+                <p class="fade-in-scroll" data-i18n="exp_3_tech"><strong>Environnement technique :</strong> Raspberry
+                    Pi, Pi-Hole, Linux, Bash, Python, Kali-Linux</p>
             </div>
         </div>
+
 
     </section>
 
@@ -216,33 +238,41 @@
             <h3 data-i18n="project_1_title">EnvieDici (03/2025 – présent)</h3>
             <p data-i18n="project_1_desc">Site vitrine, boutique en ligne et backoffice. Stack : Angular, Django,
                 Docker, Raspberry PI, GitHub Actions.</p>
-            <button class="open-modal-btn" data-modal="modal-enviedici">Détails</button>
+            <button class="open-modal-btn" data-modal="modal-enviedici" data-i18n="details_btn">Détails</button>
         </div>
+
         <div class="modal" id="modal-enviedici">
             <div class="modal-content">
                 <span class="close-modal" data-modal="modal-enviedici">&times;</span>
-                <h3 class="fade-in-scroll">Projet personnel – EnvieDici</h3>
-                <p class="fade-in-scroll"><strong>Période :</strong> Mars 2025 – En cours</p>
+                <h3 class="fade-in-scroll" data-i18n="project_1_modal_title">Projet personnel – EnvieDici</h3>
+                <p class="fade-in-scroll" data-i18n="project_1_period"><strong>Période :</strong> Mars 2025 – En cours
+                </p>
                 <hr class="fade-in-scroll">
-                <p class="fade-in-scroll"><strong>Objectifs :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="objectives">Objectifs :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Créer une vitrine digitale pour une épicerie locale</li>
-                    <li>Permettre la commande en ligne de produits locaux</li>
-                    <li>Proposer un backoffice personnalisé pour gérer produits, commandes et retraits</li>
+                    <li data-i18n="project_1_obj1">Créer une vitrine digitale pour une épicerie locale</li>
+                    <li data-i18n="project_1_obj2">Permettre la commande en ligne de produits locaux</li>
+                    <li data-i18n="project_1_obj3">Proposer un backoffice personnalisé pour gérer produits, commandes et
+                        retraits</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Réalisations :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="achievements">Réalisations :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement frontend Angular pour le site vitrine et la boutique en ligne</li>
-                    <li>Développement backend Django REST (produits, clients, commandes, créneaux)</li>
-                    <li>Création d’un backoffice gérant les factures PDF et le stock</li>
-                    <li>Conteneurisation Docker (Angular, Django, PostgreSQL)</li>
-                    <li>CI/CD automatique via GitHub Actions avec un runner sur une Raspberry Pi</li>
-                    <li>Automatisation du build des images Docker et du redémarrage des services pour simuler une chaîne
-                        de production continue.</li>
+                    <li data-i18n="project_1_real1">Développement frontend Angular pour le site vitrine et la boutique
+                        en ligne</li>
+                    <li data-i18n="project_1_real2">Développement backend Django REST (produits, clients, commandes,
+                        créneaux)</li>
+                    <li data-i18n="project_1_real3">Création d’un backoffice gérant les factures PDF et le stock</li>
+                    <li data-i18n="project_1_real4">Conteneurisation Docker (Angular, Django, PostgreSQL)</li>
+                    <li data-i18n="project_1_real5">CI/CD automatique via GitHub Actions avec un runner sur une
+                        Raspberry Pi</li>
+                    <li data-i18n="project_1_real6">Automatisation du build des images Docker et du redémarrage des
+                        services pour simuler une chaîne de production continue.</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Angular, Django REST, PostgreSQL,
-                    Docker, GitHub Actions, Raspberry Pi</p>
+                <p class="fade-in-scroll" data-i18n="project_1_tech"><strong>Environnement technique :</strong> Angular,
+                    Django REST, PostgreSQL, Docker, GitHub Actions, Raspberry Pi</p>
             </div>
+        </div>
+
         </div>
 
         <!-- Appli musicale -->
@@ -250,30 +280,37 @@
             <h3 data-i18n="project_2_title">Appli musicale (09/2024 – 12/2024)</h3>
             <p data-i18n="project_2_desc">Appli mobile Flutter avec intégration des APIs de Spotify, Deezer, Apple
                 Music.</p>
-            <button class="open-modal-btn" data-modal="modal-music">Détails</button>
+            <button class="open-modal-btn" data-modal="modal-music" data-i18n="details_btn">Détails</button>
         </div>
+
         <div class="modal" id="modal-music">
             <div class="modal-content">
                 <span class="close-modal" data-modal="modal-music">&times;</span>
-                <h3 class="fade-in-scroll">Projet personnel – Application mobile musicale</h3>
-                <p class="fade-in-scroll"><strong>Période :</strong> Septembre 2024 – Décembre 2024</p>
+                <h3 class="fade-in-scroll" data-i18n="project_2_modal_title">Projet personnel – Application mobile
+                    musicale</h3>
+                <p class="fade-in-scroll" data-i18n="project_2_period"><strong>Période :</strong> Septembre 2024 –
+                    Décembre 2024</p>
                 <hr class="fade-in-scroll">
-                <p class="fade-in-scroll"><strong>Objectifs :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="objectives">Objectifs :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Créer une application mobile multiplateforme autour de la musique</li>
-                    <li>Proposer un moteur de matching basé sur les goûts musicaux</li>
+                    <li data-i18n="project_2_obj1">Créer une application mobile multiplateforme autour de la musique
+                    </li>
+                    <li data-i18n="project_2_obj2">Proposer un moteur de matching basé sur les goûts musicaux</li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Réalisations :</strong></p>
+                <p class="fade-in-scroll"><strong data-i18n="achievements">Réalisations :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement complet de l’app Flutter (iOS + Android)</li>
-                    <li>Intégration des API de Spotify, Deezer et Apple Music</li>
-                    <li>Développement de toute la logique (auth, profils, matching) en Dart</li>
-                    <li>Travail collaboratif avec un UX/UI designer (maquettes intuitives)</li>
+                    <li data-i18n="project_2_real1">Développement complet de l’app Flutter (iOS + Android)</li>
+                    <li data-i18n="project_2_real2">Intégration des API de Spotify, Deezer et Apple Music</li>
+                    <li data-i18n="project_2_real3">Développement de toute la logique (auth, profils, matching) en Dart
+                    </li>
+                    <li data-i18n="project_2_real4">Travail collaboratif avec un UX/UI designer (maquettes intuitives)
+                    </li>
                 </ul>
-                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Flutter (Dart), Firebase, API
-                    (SPotify, Deezer, Apple Music), Git, Kanban</p>
+                <p class="fade-in-scroll" data-i18n="project_2_tech"><strong>Environnement technique :</strong> Flutter
+                    (Dart), Firebase, API (Spotify, Deezer, Apple Music), Git, Kanban</p>
             </div>
         </div>
+
     </section>
 
     <!-- FORMATIONS -->
