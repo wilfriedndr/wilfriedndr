@@ -636,8 +636,10 @@ body.dark .open-modal-btn:hover {
 /* Scrollbar stylisée pour .modal-content */
 
 .modal-content {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #aaa #f0f0f0; /* thumb + track pour Firefox */
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: #aaa #f0f0f0;
+  /* thumb + track pour Firefox */
 }
 
 /* Chrome, Edge, Safari */
@@ -653,7 +655,8 @@ body.dark .open-modal-btn:hover {
 .modal-content::-webkit-scrollbar-thumb {
   background-color: #aaa;
   border-radius: 10px;
-  border: 2px solid #f0f0f0; /* pour un effet de bord fin */
+  border: 2px solid #f0f0f0;
+  /* pour un effet de bord fin */
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
@@ -676,4 +679,24 @@ body.dark .modal-content::-webkit-scrollbar-thumb {
 
 body.dark .modal-content::-webkit-scrollbar-thumb:hover {
   background-color: #888;
+}
+
+/* --- Liste avec tirets personnalisés --- */
+ul.sub-list {
+  list-style: none !important;
+  padding-left: 2rem;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+ul.sub-list li::before {
+  content: "–";
+  color: var(--muted);
+  margin-right: 0.5rem;
+  display: inline-block;
+  width: 1rem;
+}
+
+body.dark ul.sub-list li::before {
+  color: var(--muted);
 }

@@ -77,7 +77,7 @@ const translations = {
     project_2_desc: "Appli mobile Flutter avec intégration Spotify, Deezer, Apple Music.",
     education_title: "Formations",
     edu_1: "Master EISI, EPSI Toulouse (2021–2023)",
-    edu_2: "Titre Pro DevOps, EPSI Toulouse (2020–2021)",
+    edu_2: "Bachelor Concepteur Intégrateur DevOps, EPSI Toulouse (2020–2021)",
     edu_3: "Formation Java EE, DAWAN Toulouse (2019)",
     edu_4: "BTS SN IR, Lycée Saint-Pierre Tarbes (2017–2019)",
     edu_5: "Bac STI2D SIN, Pradeau-la-Sède Tarbes (2014–2017)",

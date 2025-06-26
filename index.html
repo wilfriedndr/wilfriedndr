@@ -49,7 +49,7 @@
             <div class="hero-text">
                 <h1 data-i18n="hero_name">Wilfried NIEDERHOFFER</h1>
                 <p data-i18n="hero_title">Concepteur Développeur d’Applications</p>
-                <p data-i18n="hero_desc">Développeur passionné par le fullstack et le DevOps.</p>
+                <p data-i18n="hero_desc">Développeur passionné par le développement fullstack et le DevOps.</p>
             </div>
         </div>
     </section>
@@ -96,7 +96,7 @@
                 <hr class="fade-in-scroll">
                 <h4 class="fade-in-scroll">Projet 1 – Optimisation des workflows CI/CD</h4>
                 <p class="fade-in-scroll"><strong>Contexte :</strong> L’équipe utilisait Tortoise SVN et faisait appel à
-                    l’IT pour chaque déploiement, entraînant des lenteurs et une dépendance forte.</p>
+                    l'équipe IT du client pour chaque déploiement, entraînant des lenteurs et une dépendance forte.</p>
                 <p class="fade-in-scroll"><strong>Objectif :</strong> Moderniser les workflows de développement en
                     introduisant une CI/CD automatisée.</p>
                 <p class="fade-in-scroll"><strong>Missions :</strong></p>
@@ -107,10 +107,18 @@
                 </ul>
                 <p class="fade-in-scroll"><strong>Résultats :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Cycle de mise en production accéléré de plus de 60%</li>
-                    <li>Adoption de GitLab CI/CD par toute l’équipe</li>
+                    <li>Cycle de mise en production accéléré</li>
+                    <li>Optimisation du workflow de développement</li>
+                    <li>Amélioration significative de l’efficacité des développeurs en réduisant le temps de mise en
+                        production et en supprimant la dépendance aux équipes IT du clients pour les déploiements.</li>
+                    <li>Conception et développement d’un pipeline d’intégration continue (CI/CD) automatisant :</li>
                 </ul>
-
+                <ul class="fade-in-scroll sub-list">
+                    <li>L’exécution automatisée des tests</li>
+                    <li>Le build des applications via Maven</li>
+                    <li>La génération d’images Docker pour les différents services</li>
+                    <li>Le déploiement orchestré sur Kubernetes</li>
+                </ul>
                 <hr class="fade-in-scroll">
                 <h4 class="fade-in-scroll">Projet 2 – Développement d’une application web de modélisation 3D</h4>
                 <p class="fade-in-scroll"><strong>Contexte :</strong> Conception d’une application pour visualiser en 3D
@@ -119,13 +127,18 @@
                     permettant la modélisation 3D, avec vues 2D/3D et tableaux analytiques.</p>
                 <p class="fade-in-scroll"><strong>Missions :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Développement du frontend Angular avec Babylon.js pour la 3D</li>
+                    <li>Développement du frontend avec Angular et Babylon.js pour la modélisation 3D</li>
                     <li>Mise en place d’une API FastAPI pour la gestion des modèles 3D (import/export)</li>
                     <li>Interfaçage avec MongoDB pour la persistance des données</li>
                 </ul>
                 <p class="fade-in-scroll"><strong>Résultats :</strong></p>
                 <ul class="fade-in-scroll">
-                    <li>Application 3D interactive utilisée dans une maquette client</li>
+                    <li>Développement d’une application de modélisation 3D</li>
+                    <li>Conception et implémentation d’une interface web interactive permettant la visualisation et
+                        l’analyse du fuselage d’un avion.</li>
+                    <li>Mise en place d’une API backend en Python (FastAPI) permettant de gérer les modèles 3D et
+                        d’interagir avec les données stockées en MongoDB.</li>
+                    <li>Développement de différentes représentations des données (3D, 2D, tabulaire).</li>
                     <li>Support natif de fichiers AutoCAD, exportables pour analyse externe</li>
                 </ul>
 
@@ -157,7 +170,7 @@
                 <ul class="fade-in-scroll">
                     <li>Développement d’une application interne pour automatiser la création de comptes Office 365</li>
                     <li>Génération automatique des signatures mails et gestion des droits d’accès</li>
-                    <li>Développement et maintenance du site vitrine sous WordPress</li>
+                    <li>Développement et maintenance des sites de la société</li>
                     <li>Maintenance IT quotidienne, support technique et pilotage du CRM</li>
                 </ul>
                 <p class="fade-in-scroll"><strong>Environnement technique :</strong> Angular, PHP, Laravel, MySQL,
@@ -198,14 +211,68 @@
     <!-- PROJETS -->
     <section id="projects" class="hidden-scroll">
         <h2 data-i18n="projects_title">Projets personnels</h2>
+        <!-- Appli envie d'ici -->
         <div class="project card">
             <h3 data-i18n="project_1_title">EnvieDici (03/2025 – présent)</h3>
             <p data-i18n="project_1_desc">Site vitrine, boutique en ligne et backoffice. Stack : Angular, Django,
                 Docker, Raspberry PI, GitHub Actions.</p>
+            <button class="open-modal-btn" data-modal="modal-enviedici">Détails</button>
         </div>
+        <div class="modal" id="modal-enviedici">
+            <div class="modal-content">
+                <span class="close-modal" data-modal="modal-enviedici">&times;</span>
+                <h3 class="fade-in-scroll">Projet personnel – EnvieDici</h3>
+                <p class="fade-in-scroll"><strong>Période :</strong> Mars 2025 – En cours</p>
+                <hr class="fade-in-scroll">
+                <p class="fade-in-scroll"><strong>Objectifs :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Créer une vitrine digitale pour une épicerie locale</li>
+                    <li>Permettre la commande en ligne de produits locaux</li>
+                    <li>Proposer un backoffice personnalisé pour gérer produits, commandes et retraits</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Réalisations :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Développement frontend Angular pour le site vitrine et la boutique en ligne</li>
+                    <li>Développement backend Django REST (produits, clients, commandes, créneaux)</li>
+                    <li>Création d’un backoffice gérant les factures PDF et le stock</li>
+                    <li>Conteneurisation Docker (Angular, Django, PostgreSQL)</li>
+                    <li>CI/CD automatique via GitHub Actions avec un runner sur une Raspberry Pi</li>
+                    <li>Automatisation du build des images Docker et du redémarrage des services pour simuler une chaîne
+                        de production continue.</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Angular, Django REST, PostgreSQL,
+                    Docker, GitHub Actions, Raspberry Pi</p>
+            </div>
+        </div>
+
+        <!-- Appli musicale -->
         <div class="project card">
             <h3 data-i18n="project_2_title">Appli musicale (09/2024 – 12/2024)</h3>
-            <p data-i18n="project_2_desc">Appli mobile Flutter avec intégration Spotify, Deezer, Apple Music.</p>
+            <p data-i18n="project_2_desc">Appli mobile Flutter avec intégration des APIs de Spotify, Deezer, Apple
+                Music.</p>
+            <button class="open-modal-btn" data-modal="modal-music">Détails</button>
+        </div>
+        <div class="modal" id="modal-music">
+            <div class="modal-content">
+                <span class="close-modal" data-modal="modal-music">&times;</span>
+                <h3 class="fade-in-scroll">Projet personnel – Application mobile musicale</h3>
+                <p class="fade-in-scroll"><strong>Période :</strong> Septembre 2024 – Décembre 2024</p>
+                <hr class="fade-in-scroll">
+                <p class="fade-in-scroll"><strong>Objectifs :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Créer une application mobile multiplateforme autour de la musique</li>
+                    <li>Proposer un moteur de matching basé sur les goûts musicaux</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Réalisations :</strong></p>
+                <ul class="fade-in-scroll">
+                    <li>Développement complet de l’app Flutter (iOS + Android)</li>
+                    <li>Intégration des API de Spotify, Deezer et Apple Music</li>
+                    <li>Développement de toute la logique (auth, profils, matching) en Dart</li>
+                    <li>Travail collaboratif avec un UX/UI designer (maquettes intuitives)</li>
+                </ul>
+                <p class="fade-in-scroll"><strong>Environnement technique :</strong> Flutter (Dart), Firebase, API
+                    (SPotify, Deezer, Apple Music), Git, Kanban</p>
+            </div>
         </div>
     </section>
 
@@ -215,7 +282,7 @@
         <div class="card">
             <ul>
                 <li data-i18n="edu_1">Master EISI, EPSI Toulouse (2021–2023)</li>
-                <li data-i18n="edu_2">Titre Pro DevOps, EPSI Toulouse (2020–2021)</li>
+                <li data-i18n="edu_2">Bachelor Concepteur Intégrateur DevOps, EPSI Toulouse (2020–2021)</li>
                 <li data-i18n="edu_3">Formation Java EE, DAWAN Toulouse (2019)</li>
                 <li data-i18n="edu_4">BTS SN IR, Lycée Saint-Pierre Tarbes (2017–2019)</li>
                 <li data-i18n="edu_5">Bac STI2D SIN, Pradeau-la-Sède Tarbes (2014–2017)</li>
